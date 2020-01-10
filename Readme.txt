@@ -3,10 +3,10 @@ This is the 2 days project I made for the interview.
 How to start this web site.
 =========================================
 
-(1) Enter to umbrella folder, run 'npm install'.
+(1) Enter to 'umbrella' folder, run 'npm install'.
 (2) Build angular code: ng build --prod
-(3) Copy all files from umbrella/dist/ to web_customer/public folder. ( See Note 3)
-(4) Run docker-compose build.
+(3) Copy all files from 'umbrella/dist/umbrella' to 'web_customer/public' folder. ( See Note 3)
+(4) Run docker-compose build from project root folder.
 (5) Run docker-compose up.  If you see the errors about connecting to mongo db failed / rejected, just stop and re-run this command again.
 (6) Open http://localhost:8061 inside your favourit browser.
 
