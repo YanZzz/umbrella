@@ -1,0 +1,26 @@
+
+version: '3'
+services:
+  app:
+    container_name: customer_web_app
+    restart: always
+    build: ./web_customer
+    ports:
+      - 8061:3001
+      - 9229:9229
+    expose:
+      - 9229
+    depends_on: 
+      - mongoSvr
+  mongoSvr:
+    container_name: mongo_db
+    image: mongo
+    ports:
+      - 27017:27017
+  #angular:
+  #  container_name: angular
+  #  build: ./umbrella
+  #  ports:
+  #    - 4200:80
+
+                    

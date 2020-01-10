@@ -1,0 +1,19 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Confirm on deleting <strong>{{name$ |async }} </strong></h5>
+      <button type="button" class="btn btn-secondary" (click)="delete()" [disabled]="disabled">
+        Yes
+      </button>
+    </div>
+
+    <button type="button" class="btn btn-secondary" (click)="goback()">
+        Go Back
+    </button>
+  </div>
+
+  <div class="alert alert-primary" role="alert" *ngIf="!message.success">
+    {{ message.msg }}
+  </div>
+  <div class="alert alert-success" role="alert" *ngIf="message.success">
+    {{ message.msg }}
+  </div>

@@ -1,0 +1,78 @@
+<div>
+  <form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="customer name"
+          formControlName="name"
+        />
+      </div>
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="contact name"
+          formControlName="contact"
+        />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="phone"
+          formControlName="telephone"
+        />
+      </div>
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="# of Employee"
+          formControlName="numbers"
+        />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col input-group">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">country</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01" formControlName="country">
+          <option value="ca">Canada</option>
+          <option value="us">USA</option>
+          <option value="uk">UK</option>
+        </select>
+      </div>
+      <div class="col input-group">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect02">city</label>
+        </div>
+          <select class="custom-select" id="inputGroupSelect02" formControlName="city">
+            <option value="Toronto">Toronto</option>
+            <option value="Montreal">Montreal</option>
+            <option value="Mississauga">Mississauga</option>
+            <option value="Vancouver">Vancouver</option>
+            <option value="London">London</option>
+            <option value="Oakville">Oakville</option>
+          </select>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="disabled || !customerForm.valid">Save</button>
+    <button type="button" class="btn btn-secondary" (click)="goback()">
+      Go Back
+    </button>
+  </form>
+  <div class="spinner-border" role="status" *ngIf="updating">
+    <span class="sr-only">Saving...</span>
+  </div>
+  <div class="alert alert-primary" role="alert" *ngIf="!message.success">
+    {{ message.msg }}
+  </div>
+  <div class="alert alert-success" role="alert" *ngIf="message.success">
+    {{ message.msg }}
+  </div>
+</div>
