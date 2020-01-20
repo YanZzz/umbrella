@@ -1,4 +1,4 @@
-This is the 2 days project I made for the interview.
+This is the 2 days project I made.
 
 How to start this web site.
 =========================================
