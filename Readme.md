@@ -33,6 +33,3 @@ Note 2
 =========================================
 Hack some city like oakville and mississauga to have some no-rain records due to sample api always giving same json data.
 
-Note 3
-==========================================
-Skip the nginx contaier due to take long time to build up image in my machine.
