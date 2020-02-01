@@ -8,10 +8,15 @@ You can skip the first 3 steps and just start from the step (4) due to angular s
 (I already built it for you.)
 
 (1) Enter to 'umbrella' folder, run 'npm install'.
+
 (2) Build angular code: ng build --prod
+
 (3) Copy all files from 'umbrella/dist/umbrella' to 'web_customer/public' folder. ( See Note 3)
+
 (4) Run docker-compose build from the root project folder.
+
 (5) Run docker-compose up.  If you see the errors about connecting to mongo db failed / rejected, just stop and re-run this command again.
+
 (6) Open http://localhost:8061 inside your favourit browser.
 
 Note 1
