@@ -1,9 +1,10 @@
-# This is the 2 days project I made.
+# This is the 2-day project I made.
 
 How to start this web site.
 =========================================
 
-!!! You can skip the first 3 steps and just start from the step (4) due to angular stuff already exists in public foler.(I already built it for you.) !!!
+You can skip the first 3 steps and just start from the step (4) due to angular stuff already exists in public foler.
+(I already built it for you.)
 
 (1) Enter to 'umbrella' folder, run 'npm install'.
 (2) Build angular code: ng build --prod
