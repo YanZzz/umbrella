@@ -1,4 +1,5 @@
 # This is the 2-day project I made.
+Server side: expressjs, mongodb. client: angular.
 
 How to start this web site.
 =========================================
