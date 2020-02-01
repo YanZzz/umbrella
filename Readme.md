@@ -22,7 +22,9 @@ You can skip the first 3 steps and just start from the step (4) due to angular s
 Note 1
 =========================================
 In order to get the completely json data, just call sample api for different (country, city) combinations.
+
 Below is api call using my personal key but which giving me partial data.
+
 http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=2bffd518832bcc0bb54aec227dd2bfcb
 
 Note 2
