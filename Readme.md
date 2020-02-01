@@ -1,5 +1,6 @@
 # This is the 2-day project I made.
-Server side is based on express.js and mongodb. Client: angular 9.
+Server side is based on express.js and mongodb.
+Client: angular 9 + chart.js.
 
 How to start this web site.
 =========================================
